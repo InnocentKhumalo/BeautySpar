@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="srcipt.js"></script>
+    <title>Beauty Spar</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+        </div>
+        <h1 class="header-text">Deekay Beauty Spar</h1>
+        <div>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><i class="fa fa-close"
+                    style="font-size: 30px;
+                    padding-bottom: 15px;"></i></li>
+            <li style="padding-bottom: 15px; "><a href="appointment.php" style="color: rgb(7, 6, 6); font-size: 20px;">Book Now</a></li>
+            <li style="padding-bottom: 15px;"><a href="services.html" style="color: rgb(7, 7, 7); font-size: 20px;" >Services</a></li>
+            <li onclick="scrollToSection('prices')" style="padding-bottom: 15px;" ><a href="#"  style="color: rgb(7, 7, 7); font-size: 20px;">Prices</a></li>
+            <li style="padding-bottom: 15px;"><a href="about.html" style="color: rgb(5, 4, 4); font-size: 20px;">About Us</a></li>
+            <li onclick="scrollToSection('footer')" style="padding-bottom: 15px;"><a href="#" style="color: rgb(8, 8, 8); font-size: 20px;">Contact Us</a></li>
+            </ul>
+            <a href="#" onclick=sidebar()><i style="font-size: 50px;
+            float: right;
+             color: rgb(46, 42, 4);
+            font-weight: bold;
+            margin-right: 10px;" class="fa fa-bars"></i></a>
+        </div>
+
+        <div class="container">
+            <div class="inner">
+              <div id="one" class="item first">Deekay Beauty <br>Salon Be Beautified</div>
+              <div id="two" class="item second">Expirience The Best <br> Beauty Services</div>
+              <div id="three" class="item third">Professional Beauty <br> Care For Everyone</div>
+              <div id="four" class="item fourth">Become One Of <br> Our Beautified Clients</div>
+              
+            </div>
+            </div>
+        </div>
+            
+    </header>
+    <h1 style="text-align: left;">The Best We Offer:</h1>
+<div class="column-container">
+    
+    <div class="column1">
+ 
+    </div>
+    <div class="column2">
+        <h1>Why Our Clients <br> Choose Us</h1>
+        <p>We are a team of motivated, talented and educated beauty specialised <br>
+        We remain loyal to quality service delivery and keeping our customers happy. <br>
+    as a medium upcoming business we strive in archive the <br> best quality services at affordable prices <br>
+    A happy and beautified clients is our daily goal... <br>
+<a href="about.html"><button type="button" >Learn More</button></a>
+</p>
+    </div>
+</div>
+
+<div class="services-container">
+    <h1>Our Services</h1>
+    <div class="services">
+        <img onclick=openappointment() class="service-image" src="OIP.jpg" alt="services image1">
+        <h5>Makeup</h5>
+        <p>Our makeup experts will have you looking <br> your best in less than  30 minutes</p>
+    </div>
+    <div class="services">
+        <img onclick=openappointment() class="service-image" src="R.jpg" alt="services image2">
+    <h4>Manicure & Pedicure</h4>
+    <p>Pamper yourself with our manicure & <br> pedicure that will beautify you sensationally</p>
+    </div>
+    <div class="services">
+        <img onclick=openappointment() class="service-image" src="skincare.jpeg" alt="services image3">
+    <h4>Skin Care</h4>
+    <p>Our wide range of skin care products & <br> services will give you a glowing skin tone.</p>
+    </div>
+    <div class="services">
+        <img onclick=openappointment() class="service-image" src="Microblading-Healing-Process-2048x1365.webp" alt="services image4">
+    <h4>Micro-Blading</h4>
+    <p>Team of professionals offer <br> quality micro blading experience</p>
+    </div>
+    <div class="services">
+        <img onclick=openappointment() class="service-image" src="maxresdefault.jpg" alt="services image5">
+    <h4>Retouch</h4>
+    <P>We deliver the best permanent retouch services <br> that will leave you beutified </P>
+    </div>
+</div>
+
+<div class="clients">
+    <h2>Our <br> Clients</h2>
+    <div class="scroller-container">
+        <div class="scroller"><img class="images" src="girls.jpg" alt="scroller image1"></div>
+        <div class="scroller"><img class="images" src="ed8d64dec638dfc3275fa8a8fa11b1f4.jpg" alt="scroller image2"></div>
+        <div class="scroller"><img class="images" src="maxresdefault.jpg" alt="scroller image3"></div>
+        <div class="scroller"><img class="images" src="black-wedding-makeup-7.jpg" alt="scroller image4"></div>
+        <div class="scroller"><img class="images" src="lady.jpg" alt="scroller image5"></div>
+        <div class="scroller"><img class="images" src="gur.webp" alt="scroller image6"></div>
+        <div class="scroller"><img class="images" src="brow+1.jpg" alt="scroller image7"></div>
+        <div class="scroller"><img class="images" src="fe2aed24222607.563315cd3f967.jpg" alt="scroller image8"></div>
+    </div>
+    <div class="price" id="prices">
+        <h2>Prices</h2>
+        <p style="color: burlywood;">We deliver our services at most afortable value <br>
+        that is best suited for our customers. Our low prices don't mean poor <br>
+    services...It means we deliver the best for less.</p>
+    <div class="prices">
+        <div class="service-prices">
+            <h5>Manicure</h5>
+            <p style="color: rgb(250, 248, 245);">Our manicure experts and nail techs <br>
+            can get your nails done at affortable price</p>
+            <button type="button" onclick="openappointment()">R 180</button>
+        </div>
+        <div class="service-prices">
+            <h5>Pedicure</h5>
+            <p style="color: rgb(253, 252, 250);">Our pedicure experts and nail techs <br>
+            can get your nails done at affortable price</p>
+            <button type="button" onclick="openappointment()">R 100</button>
+        </div>
+        <div class="service-prices">
+            <h5>Microblading</h5>
+            <p style="color: rgb(245, 244, 242);">For good looking long lasting brows <br>
+            get your microblading done at</p>
+            <button type="button" onclick="openappointment()">R 1500</button>
+        </div>
+        <div class="service-prices">
+            <h5>MakeUp</h5>
+            <p style="color: rgb(248, 247, 244);">Our makeup get you looking good <br>in less than an hour
+            price range starting from wipping</p>
+            <button type="button" onclick="openappointment()">R 150</button>
+        </div>
+        <div class="service-prices">
+            <h5>Skin Care</h5>
+            <p style="color: rgb(245, 244, 243);">Our skin care products can give a glowing look you always desired <br>
+            products are good for your skin at an affordable price from</p>
+            <button type="button" onclick="openappointment()">R 80</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="AboutUs">
+    <div class="text">
+        <h2>About Us</h2>
+    <p>Deekay Beauty Salon is a growing skin care and beauty business <br> 
+        initiated by females for females, because we care about your beauty. <br>
+    It was introduced in 2021 by qualified professionals <br> 
+    with love and passion your stylist take care fo your looks  and feel...</p>
+    <button type="button" onclick="openabout()">Learn More</button>
+    </div>
+    <img src="sign.jpg" alt="about image2">
+</div>
+<footer class="footer-container" id="footer">
+    <div class="footer">
+    <div class="footer-item">
+        <h2>Our Socials</h2>
+        <div class="socials">
+            <div><i class="fa fa-facebook" style="font-size: 39px;
+            padding-right: 20px; padding-bottom: 15px;"></i>
+                <i class="fa fa-whatsapp" style="font-size: 39px;
+                padding-right: 15px; padding-bottom: 15px;"></i>
+            </div>
+            <div>
+                <i class="fa fa-instagram" style="font-size: 39px;
+                padding-right: 18px; padding-bottom: 15px;"></i>
+            <i class="fa fa-phone" style="font-size: 39px;
+            padding-right: 15px; padding-bottom: 15px;"></i>
+            </div>
+            <div>
+                <i class="fa fa-envelope" style="font-size: 39px;
+                padding-right: 15px; padding-bottom: 15px;"></i>
+            <a class="fa fa-google" style="font-size: 39px;
+            padding-right: 15px; padding-bottom: 15px;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-item">
+        <h2>Leave Us A Message</h2>
+        <div class="message">
+            <i class="fa fa-envelope-open"></i>
+            <input type="text" placeholder="How was your experience..." id="Message"
+            style="border-top: 0; border-left: 0; border-right: 0;"
+            >
+            <i class="fa fa-arrow-right"></i>
+        </div>  
+    </div>
+    </div>
+    <hr/>
+  <div class="details">
+    <p class="copyright">© 2024 Dveloper's Chronicles Pvt. Ltd.
+        All rights are reserved</p>
+         <div>Developed  By <span> Developer's Chronicles</span></div>
+  </div>
+</footer>
+</body>
+</html>
